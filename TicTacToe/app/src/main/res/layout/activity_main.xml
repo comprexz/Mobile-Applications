@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/instruction2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Select icon to start as Player 1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/gameTitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/instruction"
+        app:layout_constraintTop_toBottomOf="@+id/instruction" />
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="332dp"
+        android:layout_height="87dp"
+        android:text="Tic Tac Toe"
+        android:textSize="60sp"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="318dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:text="Place your icon in a row horizontally, vertically, or diagonally to win!"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/gameTitle"
+        app:layout_constraintStart_toStartOf="@+id/gameTitle"
+        app:layout_constraintTop_toBottomOf="@+id/gameTitle" />
+
+    <ImageButton
+        android:id="@+id/o"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:background="#00FFFFFF"
+        android:onClick="clickO"
+        app:layout_constraintBottom_toBottomOf="@+id/vs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vs"
+        app:layout_constraintTop_toTopOf="@+id/vs"
+        app:srcCompat="@drawable/letter_o_small" />
+
+    <ImageButton
+        android:id="@+id/x"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:background="#00FFFFFF"
+        android:onClick="clickX"
+        app:layout_constraintBottom_toBottomOf="@+id/vs"
+        app:layout_constraintEnd_toStartOf="@+id/vs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vs"
+        app:srcCompat="@drawable/letter_x_small" />
+
+    <ImageButton
+        android:id="@+id/vs"
+        android:layout_width="133dp"
+        android:layout_height="335dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/instruction2"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/instruction2"
+        app:layout_constraintTop_toBottomOf="@+id/instruction3"
+        app:srcCompat="@drawable/vs" />
+
+    <TextView
+        android:id="@+id/instruction3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click or Swipe then click"
+        app:layout_constraintEnd_toEndOf="@+id/instruction2"
+        app:layout_constraintStart_toStartOf="@+id/instruction2"
+        app:layout_constraintTop_toBottomOf="@+id/instruction2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
