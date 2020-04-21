@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.divyanshu.draw.widget.DrawView
+        android:id="@+id/draw_view2"
+        android:layout_width="185dp"
+        android:layout_height="312dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="185dp"
+        android:layout_height="312dp"
+        app:layout_constraintBottom_toBottomOf="@+id/draw_view1"
+        app:layout_constraintStart_toEndOf="@+id/imageView1"
+        app:layout_constraintTop_toTopOf="@+id/imageView1"
+        tools:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <com.divyanshu.draw.widget.DrawView
+        android:id="@+id/draw_view1"
+        android:layout_width="185dp"
+        android:layout_height="312dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView1"
+        app:layout_constraintEnd_toEndOf="@+id/imageView1"
+        app:layout_constraintStart_toStartOf="@+id/imageView1"
+        app:layout_constraintTop_toTopOf="@+id/imageView1" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="185dp"
+        android:layout_height="312dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/take1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="41dp"
+        android:onClick="startCameraIntentForResult1"
+        android:text="TAKE PIC"
+        app:layout_constraintEnd_toEndOf="@+id/imageView1"
+        app:layout_constraintStart_toStartOf="@+id/imageView1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+    <Button
+        android:id="@+id/take2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="56dp"
+        android:onClick="startCameraIntentForResult2"
+        android:text="TAKE PIC"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/select1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startChooseImageIntentForResult1"
+        android:text="SELECT PIC"
+        app:layout_constraintEnd_toEndOf="@+id/take1"
+        app:layout_constraintStart_toStartOf="@+id/take1"
+        app:layout_constraintTop_toBottomOf="@+id/take1" />
+
+    <Button
+        android:id="@+id/select2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startChooseImageIntentForResult2"
+        android:text="SELECT PIC"
+        app:layout_constraintEnd_toEndOf="@+id/take2"
+        app:layout_constraintStart_toStartOf="@+id/take2"
+        app:layout_constraintTop_toBottomOf="@+id/take2" />
+
+    <Button
+        android:id="@+id/blur1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="blurImage1"
+        android:text="BLUR"
+        app:layout_constraintEnd_toEndOf="@+id/select1"
+        app:layout_constraintStart_toStartOf="@+id/select1"
+        app:layout_constraintTop_toBottomOf="@+id/select1" />
+
+    <Button
+        android:id="@+id/blur2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="blurImage2"
+        android:text="BLUR"
+        app:layout_constraintEnd_toEndOf="@+id/select2"
+        app:layout_constraintStart_toStartOf="@+id/select2"
+        app:layout_constraintTop_toBottomOf="@+id/select2" />
+
+    <Button
+        android:id="@+id/clear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clearBlur1"
+        android:text="CLEAR"
+        app:layout_constraintEnd_toEndOf="@+id/blur1"
+        app:layout_constraintStart_toStartOf="@+id/blur1"
+        app:layout_constraintTop_toBottomOf="@+id/blur1" />
+
+    <Button
+        android:id="@+id/clear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clearBlur2"
+        android:text="CLEAR"
+        app:layout_constraintEnd_toEndOf="@+id/blur2"
+        app:layout_constraintStart_toStartOf="@+id/blur2"
+        app:layout_constraintTop_toBottomOf="@+id/blur2" />
+
+    <Button
+        android:id="@+id/swap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="swapFaces"
+        android:text="SWAP FACES"
+        app:layout_constraintEnd_toEndOf="@+id/clear1"
+        app:layout_constraintStart_toStartOf="@+id/clear1"
+        app:layout_constraintTop_toBottomOf="@+id/clear1" />
+
+    <Button
+        android:id="@+id/undo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="undoSwap"
+        android:text="UNDO SWAP"
+        app:layout_constraintEnd_toEndOf="@+id/clear2"
+        app:layout_constraintStart_toStartOf="@+id/clear2"
+        app:layout_constraintTop_toBottomOf="@+id/clear2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

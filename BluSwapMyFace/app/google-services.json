@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "291118152024",
+    "firebase_url": "https://bluswapmyface.firebaseio.com",
+    "project_id": "bluswapmyface",
+    "storage_bucket": "bluswapmyface.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291118152024:android:3984420cfc8c2fbbc28d2d",
+        "android_client_info": {
+          "package_name": "com.example.bluswapmyface"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291118152024-aquda32fls9dnaq350vont5dh959sm8u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bluswapmyface",
+            "certificate_hash": "b0f18878e91c745a3bb1185431c4f3d3d3c9535c"
+          }
+        },
+        {
+          "client_id": "291118152024-v5n5jcsvkn4npq6pg9j0djc1ssid6kq2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiNNzZCKJ_LtqN5ff53fBWNnCsp54s6dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291118152024-v5n5jcsvkn4npq6pg9j0djc1ssid6kq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

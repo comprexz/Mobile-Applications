@@ -60,8 +60,10 @@
         android:onClick="clickX"
         app:layout_constraintBottom_toBottomOf="@+id/vs"
         app:layout_constraintEnd_toStartOf="@+id/vs"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/vs"
+        app:layout_constraintVertical_bias="0.502"
         app:srcCompat="@drawable/letter_x_small" />
 
     <ImageButton
@@ -70,7 +72,7 @@
         android:layout_height="335dp"
         android:background="#00FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/instruction2"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="@+id/instruction2"
         app:layout_constraintTop_toBottomOf="@+id/instruction3"
         app:srcCompat="@drawable/vs" />
