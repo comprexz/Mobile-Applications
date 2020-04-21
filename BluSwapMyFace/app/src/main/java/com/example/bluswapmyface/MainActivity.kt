@@ -390,9 +390,21 @@ class MainActivity : AppCompatActivity() {
                 val source = ImageDecoder.createSource(contentResolver, imageUri1!!)
                 ImageDecoder.decodeBitmap(source)
             }
-            var imageBitmapblur = bitmapBlur( imageBitmap, 0.2f, 32)
+            var blur1 = Bitmap.createBitmap(
+                imageBitmap1!!.getWidth(),
+                imageBitmap1!!.getHeight(),
+                imageBitmap1!!.getConfig()
+            )
+
+            var canvas1 = Canvas(blur1)
+            var imageBitmapblur = faceBitmap1?.let { bitmapBlur(it, 0.2f, 16) }
+            var imageBitmapblurScaled = imageBitmapblur?.let { Bitmap.createScaledBitmap(it, imageBitmapblur.width*5, imageBitmapblur.height*5, false ) }
+
+            canvas1.drawBitmap(imageBitmap1!!, Matrix(), null )
+            canvas1.drawBitmap(imageBitmapblurScaled!!, face1Bound!!.left.toFloat(), face1Bound!!.top.toFloat(), null )
+
             //imageView1?.setImageBitmap(imageBitmapblur)
-            mydrawView1?.background= BitmapDrawable(resources, imageBitmapblur);
+            mydrawView1?.background= BitmapDrawable(resources, blur1);
         } catch (e: IOException) {
         }
     }
@@ -407,9 +419,22 @@ class MainActivity : AppCompatActivity() {
                 val source = ImageDecoder.createSource(contentResolver, imageUri2!!)
                 ImageDecoder.decodeBitmap(source)
             }
-            var imageBitmapblur = bitmapBlur( imageBitmap, 0.2f, 32)
+            var blur2 = Bitmap.createBitmap(
+                imageBitmap1!!.getWidth(),
+                imageBitmap1!!.getHeight(),
+                imageBitmap1!!.getConfig()
+            )
+
+            var canvas2 = Canvas(blur2)
+            var imageBitmapblur = faceBitmap2?.let { bitmapBlur(it, 0.2f, 16) }
+            var imageBitmapblurScaled = imageBitmapblur?.let { Bitmap.createScaledBitmap(it, imageBitmapblur.width*5, imageBitmapblur.height*5, false ) }
+
+            canvas2.drawBitmap(imageBitmap2!!, Matrix(), null )
+            canvas2.drawBitmap(imageBitmapblurScaled!!, face2Bound!!.left.toFloat(), face2Bound!!.top.toFloat(), null )
+
+
             //imageView2?.setImageBitmap(imageBitmapblur)
-            mydrawView2?.background= BitmapDrawable(resources, imageBitmapblur);
+            mydrawView2?.background= BitmapDrawable(resources, blur2);
         } catch (e: IOException) {
         }
     }
