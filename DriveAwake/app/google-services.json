@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "235995803303",
+    "firebase_url": "https://driveawake-1cb49.firebaseio.com",
+    "project_id": "driveawake-1cb49",
+    "storage_bucket": "driveawake-1cb49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235995803303:android:9f066a33f84730ce213582",
+        "android_client_info": {
+          "package_name": "com.example.driveawake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235995803303-mo9f6kc3q0cfsmqr51qa8k8149rsa0tl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.driveawake",
+            "certificate_hash": "b0f18878e91c745a3bb1185431c4f3d3d3c9535c"
+          }
+        },
+        {
+          "client_id": "235995803303-dl869vub7c8sopkp0hsatrqi0alf1uha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkevQ5SU2pr4u9kaU3pe3c0lAVC8S89Gg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235995803303-dl869vub7c8sopkp0hsatrqi0alf1uha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

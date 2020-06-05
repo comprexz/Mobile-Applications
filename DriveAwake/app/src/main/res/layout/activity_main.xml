@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/road"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/butStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="364dp"
+        android:text="CAMERA" />
+
+    <Button
+        android:id="@+id/connectButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="364dp"
+        android:onClick="connect"
+        android:text="Device" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clearText"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="404dp"
+        android:text="Clear" />
+
+    <TextView
+        android:id="@+id/bluetoothText"
+        android:layout_width="167dp"
+        android:layout_height="221dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="88dp"
+        android:textColor="#FFFCFC" />
+
+    <Button
+        android:id="@+id/butStartNoCam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="404dp"
+        android:text="No Cam" />
+
+    <Button
+        android:id="@+id/butStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="444dp"
+        android:text="STOP" />
+
+</RelativeLayout>
